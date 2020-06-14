@@ -10,9 +10,26 @@
 		8D3CD6AB248D24A80065A1A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6AA248D24A80065A1A4 /* AppDelegate.swift */; };
 		8D3CD6AD248D24A80065A1A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6AC248D24A80065A1A4 /* SceneDelegate.swift */; };
 		8D3CD6AF248D24A80065A1A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6AE248D24A80065A1A4 /* ViewController.swift */; };
-		8D3CD6B2248D24A80065A1A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CD6B0248D24A80065A1A4 /* Main.storyboard */; };
 		8D3CD6B4248D24A90065A1A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CD6B3248D24A90065A1A4 /* Assets.xcassets */; };
 		8D3CD6B7248D24A90065A1A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CD6B5248D24A90065A1A4 /* LaunchScreen.storyboard */; };
+		8D3CD6C2248D36320065A1A4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6C1248D36320065A1A4 /* Coordinator.swift */; };
+		8D3CD6C4248D36490065A1A4 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6C3248D36490065A1A4 /* Presenter.swift */; };
+		8D3CD6CB248D36B70065A1A4 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6C5248D36B70065A1A4 /* HomePresenter.swift */; };
+		8D3CD6D2248D39E50065A1A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6D1248D39E50065A1A4 /* AppCoordinator.swift */; };
+		8D3CD6D4248D3BB90065A1A4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6D3248D3BB90065A1A4 /* HomeCoordinator.swift */; };
+		8D3CD6D6248D3E230065A1A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6D5248D3E230065A1A4 /* HomeViewController.swift */; };
+		8D7CEEDF248EFF4B008F8A67 /* MemoryLeakType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEDE248EFF4B008F8A67 /* MemoryLeakType.swift */; };
+		8D7CEEE4248F0866008F8A67 /* StrongReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEE3248F0866008F8A67 /* StrongReferencesViewController.swift */; };
+		8D7CEEE6248F0893008F8A67 /* StrongReferencesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEE5248F0893008F8A67 /* StrongReferencesPresenter.swift */; };
+		8D7CEEEA248F08E5008F8A67 /* AlertActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEE9248F08E5008F8A67 /* AlertActionViewController.swift */; };
+		8DC181FF2495B526004F1C81 /* StrongReferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC181FE2495B526004F1C81 /* StrongReferencesCoordinator.swift */; };
+		8DC182032495C0C0004F1C81 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182022495C0C0004F1C81 /* NotificationCenterViewController.swift */; };
+		8DC182072495CB62004F1C81 /* ClosureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182062495CB62004F1C81 /* ClosureType.swift */; };
+		8DC182092495CD3B004F1C81 /* ClosuresCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182082495CD3B004F1C81 /* ClosuresCoordinator.swift */; };
+		8DC1820B2495CD98004F1C81 /* ClosuresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1820A2495CD98004F1C81 /* ClosuresPresenter.swift */; };
+		8DC1820F2495CE05004F1C81 /* ClosuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */; };
+		8DC182132495D4A9004F1C81 /* ViewAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */; };
+		8DC182192495D4E5004F1C81 /* GDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182182495D4E5004F1C81 /* GDCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +37,27 @@
 		8D3CD6AA248D24A80065A1A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3CD6AC248D24A80065A1A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8D3CD6AE248D24A80065A1A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8D3CD6B1248D24A80065A1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D3CD6B3248D24A90065A1A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D3CD6B6248D24A90065A1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D3CD6B8248D24A90065A1A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3CD6C1248D36320065A1A4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8D3CD6C3248D36490065A1A4 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		8D3CD6C5248D36B70065A1A4 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		8D3CD6D1248D39E50065A1A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8D3CD6D3248D3BB90065A1A4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		8D3CD6D5248D3E230065A1A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8D7CEEDE248EFF4B008F8A67 /* MemoryLeakType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLeakType.swift; sourceTree = "<group>"; };
+		8D7CEEE3248F0866008F8A67 /* StrongReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferencesViewController.swift; sourceTree = "<group>"; };
+		8D7CEEE5248F0893008F8A67 /* StrongReferencesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferencesPresenter.swift; sourceTree = "<group>"; };
+		8D7CEEE9248F08E5008F8A67 /* AlertActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionViewController.swift; sourceTree = "<group>"; };
+		8DC181FE2495B526004F1C81 /* StrongReferencesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferencesCoordinator.swift; sourceTree = "<group>"; };
+		8DC182022495C0C0004F1C81 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		8DC182062495CB62004F1C81 /* ClosureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureType.swift; sourceTree = "<group>"; };
+		8DC182082495CD3B004F1C81 /* ClosuresCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresCoordinator.swift; sourceTree = "<group>"; };
+		8DC1820A2495CD98004F1C81 /* ClosuresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresPresenter.swift; sourceTree = "<group>"; };
+		8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresViewController.swift; sourceTree = "<group>"; };
+		8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimateViewController.swift; sourceTree = "<group>"; };
+		8DC182182495D4E5004F1C81 /* GDCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +92,94 @@
 			children = (
 				8D3CD6AA248D24A80065A1A4 /* AppDelegate.swift */,
 				8D3CD6AC248D24A80065A1A4 /* SceneDelegate.swift */,
-				8D3CD6AE248D24A80065A1A4 /* ViewController.swift */,
-				8D3CD6B0248D24A80065A1A4 /* Main.storyboard */,
+				8D3CD6BF248D36020065A1A4 /* Base */,
+				8D3CD6D8248D909F0065A1A4 /* Models */,
+				8D3CD6D7248D427D0065A1A4 /* Coordinators */,
+				8D7CEEE0248F0800008F8A67 /* Features */,
+				8D3CD6BE248D34EB0065A1A4 /* Supporting Files */,
+			);
+			path = MemoryLeak;
+			sourceTree = "<group>";
+		};
+		8D3CD6BE248D34EB0065A1A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				8D3CD6B3248D24A90065A1A4 /* Assets.xcassets */,
 				8D3CD6B5248D24A90065A1A4 /* LaunchScreen.storyboard */,
 				8D3CD6B8248D24A90065A1A4 /* Info.plist */,
 			);
-			path = MemoryLeak;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D3CD6BF248D36020065A1A4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8D3CD6C1248D36320065A1A4 /* Coordinator.swift */,
+				8D3CD6C3248D36490065A1A4 /* Presenter.swift */,
+				8D3CD6AE248D24A80065A1A4 /* ViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8D3CD6C0248D36090065A1A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8D3CD6C5248D36B70065A1A4 /* HomePresenter.swift */,
+				8D3CD6D5248D3E230065A1A4 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8D3CD6D7248D427D0065A1A4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D3CD6D1248D39E50065A1A4 /* AppCoordinator.swift */,
+				8D3CD6D3248D3BB90065A1A4 /* HomeCoordinator.swift */,
+				8DC181FE2495B526004F1C81 /* StrongReferencesCoordinator.swift */,
+				8DC182082495CD3B004F1C81 /* ClosuresCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D3CD6D8248D909F0065A1A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D7CEEDE248EFF4B008F8A67 /* MemoryLeakType.swift */,
+				8DC182062495CB62004F1C81 /* ClosureType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D7CEEE0248F0800008F8A67 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8D3CD6C0248D36090065A1A4 /* Home */,
+				8D7CEEE1248F080F008F8A67 /* StrongReferences */,
+				8D7CEEE2248F081F008F8A67 /* Closures */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8D7CEEE1248F080F008F8A67 /* StrongReferences */ = {
+			isa = PBXGroup;
+			children = (
+				8D7CEEE5248F0893008F8A67 /* StrongReferencesPresenter.swift */,
+				8D7CEEE3248F0866008F8A67 /* StrongReferencesViewController.swift */,
+			);
+			path = StrongReferences;
+			sourceTree = "<group>";
+		};
+		8D7CEEE2248F081F008F8A67 /* Closures */ = {
+			isa = PBXGroup;
+			children = (
+				8DC1820A2495CD98004F1C81 /* ClosuresPresenter.swift */,
+				8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */,
+				8DC182022495C0C0004F1C81 /* NotificationCenterViewController.swift */,
+				8D7CEEE9248F08E5008F8A67 /* AlertActionViewController.swift */,
+				8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */,
+				8DC182182495D4E5004F1C81 /* GDCViewController.swift */,
+			);
+			path = Closures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +242,6 @@
 			files = (
 				8D3CD6B7248D24A90065A1A4 /* LaunchScreen.storyboard in Resources */,
 				8D3CD6B4248D24A90065A1A4 /* Assets.xcassets in Resources */,
-				8D3CD6B2248D24A80065A1A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +252,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3CD6C2248D36320065A1A4 /* Coordinator.swift in Sources */,
 				8D3CD6AF248D24A80065A1A4 /* ViewController.swift in Sources */,
+				8D3CD6D4248D3BB90065A1A4 /* HomeCoordinator.swift in Sources */,
 				8D3CD6AB248D24A80065A1A4 /* AppDelegate.swift in Sources */,
+				8D3CD6CB248D36B70065A1A4 /* HomePresenter.swift in Sources */,
+				8DC182032495C0C0004F1C81 /* NotificationCenterViewController.swift in Sources */,
+				8DC182092495CD3B004F1C81 /* ClosuresCoordinator.swift in Sources */,
+				8D7CEEEA248F08E5008F8A67 /* AlertActionViewController.swift in Sources */,
+				8D7CEEE6248F0893008F8A67 /* StrongReferencesPresenter.swift in Sources */,
+				8DC1820B2495CD98004F1C81 /* ClosuresPresenter.swift in Sources */,
+				8D3CD6D2248D39E50065A1A4 /* AppCoordinator.swift in Sources */,
+				8DC182132495D4A9004F1C81 /* ViewAnimateViewController.swift in Sources */,
+				8DC182072495CB62004F1C81 /* ClosureType.swift in Sources */,
+				8D7CEEE4248F0866008F8A67 /* StrongReferencesViewController.swift in Sources */,
+				8D3CD6D6248D3E230065A1A4 /* HomeViewController.swift in Sources */,
 				8D3CD6AD248D24A80065A1A4 /* SceneDelegate.swift in Sources */,
+				8D3CD6C4248D36490065A1A4 /* Presenter.swift in Sources */,
+				8DC182192495D4E5004F1C81 /* GDCViewController.swift in Sources */,
+				8D7CEEDF248EFF4B008F8A67 /* MemoryLeakType.swift in Sources */,
+				8DC181FF2495B526004F1C81 /* StrongReferencesCoordinator.swift in Sources */,
+				8DC1820F2495CE05004F1C81 /* ClosuresViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8D3CD6B0248D24A80065A1A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D3CD6B1248D24A80065A1A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D3CD6B5248D24A90065A1A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.victorpereira.MemoryLeak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.victorpereira.MemoryLeak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
