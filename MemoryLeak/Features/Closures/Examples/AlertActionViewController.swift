@@ -14,9 +14,9 @@ final class AlertActionViewController: ViewController {
         super.viewDidLoad()
         setupView()
         
-        let alertController = UIAlertController(title: "Olha só", message: "Parece que UIAlertActions são seguras sem [weak self]", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Olha só", message: "Parece que UIAlertActions são seguras sem [weak self] 😮", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Show", style: .default, handler: { _ in
-            self.view.backgroundColor = .green
+            self.navigationController?.popViewController(animated: true)
         })
         alertController.addAction(alertAction)
         

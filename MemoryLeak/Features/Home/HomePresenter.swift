@@ -14,7 +14,7 @@ protocol HomeCoordinatorProtocol: AnyObject {
 
 final class HomePresenter: Presenter {
     
-    weak var router: HomeCoordinatorProtocol?
+    weak var coordinator: HomeCoordinatorProtocol?
 }
 
 // MARK: HomePresenterProtocol
@@ -27,9 +27,9 @@ extension HomePresenter: HomePresenterProtocol {
     func didSelectCellAt(row: Int) {
         switch leakTypes[row] {
         case .strongReferences:
-            router?.openStrongReferences()
+            coordinator?.openStrongReferences()
         case .closures:
-            router?.openClosures()
+            coordinator?.openClosures()
         }
     }
 }

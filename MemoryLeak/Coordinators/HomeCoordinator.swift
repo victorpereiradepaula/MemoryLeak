@@ -12,7 +12,7 @@ final class HomeCoordinator: Coordinator {
     
     func start() -> UIViewController {
         let presenter = HomePresenter()
-        presenter.router = self
+        presenter.coordinator = self
         
         let navigationController = UINavigationController(rootViewController: HomeViewController(presenter: presenter))
         

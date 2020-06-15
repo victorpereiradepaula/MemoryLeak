@@ -17,7 +17,7 @@ final class ClosuresCoordinator: Coordinator {
     
     func start() -> UIViewController {
         let closuresPresenter = ClosuresPresenter()
-        closuresPresenter.router = self
+        closuresPresenter.coordinator = self
         
         return ClosuresViewController(presenter: closuresPresenter)
     }
@@ -35,10 +35,14 @@ extension ClosuresCoordinator: ClosureCoordinatorProtocol {
     }
     
     func openViewAnimate() {
-        
+        navigationController?.pushViewController(ViewAnimateViewController(), animated: true)
     }
     
     func openGCD() {
-        
+        navigationController?.pushViewController(GCDViewController(), animated: true)
+    }
+    
+    func openGCDDeadline() {
+        navigationController?.pushViewController(GCDDeadlineViewController(), animated: true)
     }
 }

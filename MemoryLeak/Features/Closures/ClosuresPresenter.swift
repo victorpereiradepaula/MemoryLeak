@@ -11,11 +11,12 @@ protocol ClosureCoordinatorProtocol: AnyObject {
     func openAlertAction()
     func openViewAnimate()
     func openGCD()
+    func openGCDDeadline()
 }
 
 final class ClosuresPresenter: Presenter {
     
-    weak var router: ClosureCoordinatorProtocol?
+    weak var coordinator: ClosureCoordinatorProtocol?
 }
 
 // MARK: ClosuresPresenterProtocol
@@ -28,9 +29,15 @@ extension ClosuresPresenter: ClosuresPresenterProtocol {
     func didSelectCellAt(row: Int) {
         switch closureTypes[row] {
         case .alertAction:
-            router?.openAlertAction()
+            coordinator?.openAlertAction()
         case .notificationCenter:
-            router?.openNotificationCenter()
+            coordinator?.openNotificationCenter()
+        case .viewAnimate:
+            coordinator?.openViewAnimate()
+        case .gcd:
+            coordinator?.openGCD()
+        case .gcdWithDeadline:
+            coordinator?.openGCDDeadline()
         }
     }
 }
