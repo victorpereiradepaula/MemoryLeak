@@ -12,7 +12,7 @@ protocol ReferenceCyclePresenterProtocol: PresenterProtocol {
     func didTapAlertButton()
 }
 
-final class ReferenceCycleViewController: ViewController {
+final class ReferenceCycleViewController: LabelViewController {
     
     var presenter: ReferenceCyclePresenterProtocol? {
         basePresenter as? ReferenceCyclePresenterProtocol
@@ -23,6 +23,8 @@ final class ReferenceCycleViewController: ViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Clique para ver o alerta", for: .normal)
         button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .purple
+        button.layer.cornerRadius = 4
         button.addTarget(self, action: #selector(didTapAlertButton), for: .touchUpInside)
         return button
     }()
@@ -31,16 +33,17 @@ final class ReferenceCycleViewController: ViewController {
         super.viewDidLoad()
         setupView()
         
-        title = "Strong References"
+        label.text = "Referências circulares ocorrem quando:\n\n- A classe X tem uma referência da Y;\n- A classe Y tem uma referência da X.\n\nSó há Memory Leak se ambas as referências forem fotes."
+        
+        title = "Reference Cycle"
     }
     
-    private func setupView() {
-        view.backgroundColor = .red
-        
+    private func setupView() {        
         view.addSubview(alertButton)
         NSLayoutConstraint.activate([
-            alertButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            alertButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            alertButton.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24),
+            alertButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
+            alertButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16)
         ])
     }
     

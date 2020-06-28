@@ -8,14 +8,15 @@
 
 import UIKit
 
-final class NotificationCenterViewController: LabelViewController {
+final class NotificationCenterViewController: LabelViewController, PrintSomethingProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         label.text = "Precisamos de [weak self] nas closures do NotificationCenter.default.addObserver"
+        
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "DoSomething"), object: nil, queue: .main) { _ in
-            self.view.backgroundColor = .green
+            self.printSomething()
         }
     }
 }

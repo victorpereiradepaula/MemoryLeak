@@ -7,7 +7,8 @@
 //
 
 enum ClosureType: CaseIterable {
-    case alertAction, notificationCenter, viewAnimate, gcd, gcdWithDeadline, escapingClosure, nonescapingClosure
+    case alertAction, notificationCenter, viewAnimate, gcd, gcdWithDeadline, escapingClosure, nonescapingClosure,
+        request
     
     var title: String {
         switch self {
@@ -25,6 +26,8 @@ enum ClosureType: CaseIterable {
             return "Custom Escaping Closure"
         case .nonescapingClosure:
             return "Custom Nonescaping Closure"
+        case .request:
+            return "Request"
         }
     }
 }

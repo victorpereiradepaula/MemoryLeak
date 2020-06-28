@@ -8,15 +8,15 @@
 
 import UIKit
 
-final class GrandCentralDispatchViewController: LabelViewController {
+final class GrandCentralDispatchViewController: LabelViewController, PrintSomethingProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.label.text = "DispatchQueue.main.async é seguro sem [weak self]"
+        
         DispatchQueue.main.async {
-            self.view.backgroundColor = .green
-            self.label.textColor = .black
-            self.label.text = "DispatchQueue.main.async é seguro sem [weak self]"
+            self.printSomething()
         }
     }
 }

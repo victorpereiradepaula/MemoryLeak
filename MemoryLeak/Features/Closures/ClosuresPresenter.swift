@@ -14,6 +14,7 @@ protocol ClosureCoordinatorProtocol: AnyObject {
     func showGCDDeadline()
     func showEscapingClosure()
     func showNonescapingClosure()
+    func showRequest()
 }
 
 final class ClosuresPresenter: Presenter {
@@ -44,6 +45,8 @@ extension ClosuresPresenter: ClosuresPresenterProtocol {
             coordinator?.showEscapingClosure()
         case .nonescapingClosure:
             coordinator?.showNonescapingClosure()
+        case .request:
+            coordinator?.showRequest()
         }
     }
 }

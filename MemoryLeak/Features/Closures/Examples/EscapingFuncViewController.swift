@@ -8,9 +8,9 @@
 
 import UIKit
 
-final class EscapingFuncViewController: LabelViewController {
+final class EscapingFuncViewController: LabelViewController, PrintSomethingProtocol {
     
-    func escapingFunc(test: UIColor, completionHandler: @escaping (Error?) -> Void) {
+    func escapingFunc(completionHandler: @escaping (Error?) -> Void) {
         guard let url = URL(string: "https://www.google.com.br") else { return }
         URLSession.shared.dataTask(with: url) { _,_, error in
             completionHandler(error)
@@ -22,8 +22,8 @@ final class EscapingFuncViewController: LabelViewController {
         
         label.text = ""
         
-        escapingFunc(test: .green) { (error) in
-            self.view.backgroundColor = .purple
+        escapingFunc() { (error) in
+            self.printSomething()
             print("Error: \(error?.localizedDescription ?? "-")")
         }
     }

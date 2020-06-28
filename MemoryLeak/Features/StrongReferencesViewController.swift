@@ -13,6 +13,8 @@ final class StrongReferencesViewController: LabelViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = "Observe que o coordinator StrongReferencesCoordinator não será desalocado quando voltarmos, porque uma referência forde dele é mantida na variável childCoordinator de HomeCoordinator."
+        label.text = "Observe que StrongReferencesCoordinator não será desalocado quando voltarmos, porque uma referência forde dele é mantida na variável childCoordinator de HomeCoordinator."
+        
+        title = "Strong References"
     }
 }

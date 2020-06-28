@@ -13,9 +13,8 @@ class LabelViewController: ViewController {
     internal lazy var label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .yellow
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         return label
     }()
     
@@ -25,7 +24,6 @@ class LabelViewController: ViewController {
     }
     
     private func setupView() {
-        view.backgroundColor = .red
         view.addSubview(label)
         
         NSLayoutConstraint.activate([

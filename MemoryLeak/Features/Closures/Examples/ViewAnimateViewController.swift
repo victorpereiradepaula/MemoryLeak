@@ -8,16 +8,17 @@
 
 import UIKit
 
-final class ViewAnimateViewController: LabelViewController {
+final class ViewAnimateViewController: LabelViewController, PrintSomethingProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIView.animate(withDuration: 0.5, animations: {
+        label.text = "UIView.animate é seguro sem [weak self]"
+        
+        UIView.animate(withDuration: 0.5,delay: 0.5, animations: {
             self.view.backgroundColor = .green
-            self.label.textColor = .black
         }) { _ in
-            self.label.text = "UIView.animate é seguro sem [weak self]"
+            self.printSomething()
         }
     }
 }

@@ -49,4 +49,8 @@ extension ClosuresCoordinator: ClosureCoordinatorProtocol {
     func showNonescapingClosure() {
         navigationController?.pushViewController(NonescapingVarViewController(), animated: true)
     }
+    
+    func showRequest() {
+        
+    }
 }

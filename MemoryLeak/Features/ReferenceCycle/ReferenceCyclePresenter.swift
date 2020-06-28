@@ -17,8 +17,8 @@ final class ReferenceCyclePresenter: Presenter {
 extension ReferenceCyclePresenter: ReferenceCyclePresenterProtocol {
     
     func didTapAlertButton() {
-        let alertController = UIAlertController(title: "Cuidado", message: "Talvez exista um memory leak aqui", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Vamos corrigir", style: .default))
+        let alertController = UIAlertController(title: nil, message: "Cuidado com referências circulares.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default))
         
         viewController?.present(alertController, animated: true)
     }

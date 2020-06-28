@@ -6,7 +6,7 @@
 //  Copyright © 2020 Victor Pereira. All rights reserved.
 //
 
-final class NonescapingVarViewController: LabelViewController {
+final class NonescapingVarViewController: LabelViewController, PrintSomethingProtocol {
     
     var nonescapingVar: (() -> Void)?
     
@@ -14,7 +14,7 @@ final class NonescapingVarViewController: LabelViewController {
         super.viewDidLoad()
         
         nonescapingVar = {
-            self.view.backgroundColor = .red
+            self.printSomething()
         }
     }
 }

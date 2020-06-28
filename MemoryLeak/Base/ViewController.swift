@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .white
+    }
+    
     #if DEBUG
     deinit {
         print("deinit: \(Self.self)")
