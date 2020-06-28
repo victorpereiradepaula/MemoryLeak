@@ -8,8 +8,9 @@
 
 
 protocol HomeCoordinatorProtocol: AnyObject {
-    func openStrongReferences()
-    func openClosures()
+    func showReferenceCycles()
+    func showStrongReferences()
+    func showClosures()
 }
 
 final class HomePresenter: Presenter {
@@ -26,10 +27,12 @@ extension HomePresenter: HomePresenterProtocol {
     
     func didSelectCellAt(row: Int) {
         switch leakTypes[row] {
+        case .referenceCycles:
+            coordinator?.showReferenceCycles()
         case .strongReferences:
-            coordinator?.openStrongReferences()
+            coordinator?.showStrongReferences()
         case .closures:
-            coordinator?.openClosures()
+            coordinator?.showClosures()
         }
     }
 }

@@ -7,7 +7,7 @@
 //
 
 enum ClosureType: CaseIterable {
-    case alertAction, notificationCenter, viewAnimate, gcd, gcdWithDeadline
+    case alertAction, notificationCenter, viewAnimate, gcd, gcdWithDeadline, escapingClosure, nonescapingClosure
     
     var title: String {
         switch self {
@@ -21,6 +21,10 @@ enum ClosureType: CaseIterable {
             return "Grand Central Dispatch (GCD)"
         case .gcdWithDeadline:
             return "GCD Deadline"
+        case .escapingClosure:
+            return "Custom Escaping Closure"
+        case .nonescapingClosure:
+            return "Custom Nonescaping Closure"
         }
     }
 }

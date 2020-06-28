@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D078D86249DA59C00B43D76 /* NonescapingVarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D078D85249DA59C00B43D76 /* NonescapingVarViewController.swift */; };
+		8D078D88249DA5AF00B43D76 /* EscapingFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D078D87249DA5AF00B43D76 /* EscapingFuncViewController.swift */; };
 		8D3CD6AB248D24A80065A1A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6AA248D24A80065A1A4 /* AppDelegate.swift */; };
 		8D3CD6AD248D24A80065A1A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6AC248D24A80065A1A4 /* SceneDelegate.swift */; };
 		8D3CD6AF248D24A80065A1A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6AE248D24A80065A1A4 /* ViewController.swift */; };
@@ -16,12 +18,13 @@
 		8D3CD6C4248D36490065A1A4 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6C3248D36490065A1A4 /* Presenter.swift */; };
 		8D3CD6CB248D36B70065A1A4 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6C5248D36B70065A1A4 /* HomePresenter.swift */; };
 		8D3CD6D2248D39E50065A1A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6D1248D39E50065A1A4 /* AppCoordinator.swift */; };
-		8D3CD6D4248D3BB90065A1A4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6D3248D3BB90065A1A4 /* HomeCoordinator.swift */; };
 		8D3CD6D6248D3E230065A1A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CD6D5248D3E230065A1A4 /* HomeViewController.swift */; };
 		8D7CEEDF248EFF4B008F8A67 /* MemoryLeakType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEDE248EFF4B008F8A67 /* MemoryLeakType.swift */; };
-		8D7CEEE4248F0866008F8A67 /* StrongReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEE3248F0866008F8A67 /* StrongReferencesViewController.swift */; };
-		8D7CEEE6248F0893008F8A67 /* StrongReferencesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEE5248F0893008F8A67 /* StrongReferencesPresenter.swift */; };
+		8D7CEEE4248F0866008F8A67 /* ReferenceCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEE3248F0866008F8A67 /* ReferenceCycleViewController.swift */; };
+		8D7CEEE6248F0893008F8A67 /* ReferenceCyclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEE5248F0893008F8A67 /* ReferenceCyclePresenter.swift */; };
 		8D7CEEEA248F08E5008F8A67 /* AlertActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CEEE9248F08E5008F8A67 /* AlertActionViewController.swift */; };
+		8D8B7F4D24A90FBF0023A6E5 /* StrongReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8B7F4C24A90FBF0023A6E5 /* StrongReferencesViewController.swift */; };
+		8D8B7F4F24A911910023A6E5 /* ReferenceCycleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8B7F4E24A911910023A6E5 /* ReferenceCycleCoordinator.swift */; };
 		8DC181FF2495B526004F1C81 /* StrongReferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC181FE2495B526004F1C81 /* StrongReferencesCoordinator.swift */; };
 		8DC182032495C0C0004F1C81 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182022495C0C0004F1C81 /* NotificationCenterViewController.swift */; };
 		8DC182072495CB62004F1C81 /* ClosureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182062495CB62004F1C81 /* ClosureType.swift */; };
@@ -29,12 +32,16 @@
 		8DC1820B2495CD98004F1C81 /* ClosuresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1820A2495CD98004F1C81 /* ClosuresPresenter.swift */; };
 		8DC1820F2495CE05004F1C81 /* ClosuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */; };
 		8DC182132495D4A9004F1C81 /* ViewAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */; };
-		8DC182192495D4E5004F1C81 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182182495D4E5004F1C81 /* GCDViewController.swift */; };
+		8DC182192495D4E5004F1C81 /* GrandCentralDispatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182182495D4E5004F1C81 /* GrandCentralDispatchViewController.swift */; };
+		8DD9EB0C24982CEE002293F3 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9EB0B24982CEE002293F3 /* RequestViewController.swift */; };
+		8DD9EB0F24982DFA002293F3 /* RequestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9EB0E24982DFA002293F3 /* RequestPresenter.swift */; };
 		8DE4CDBA24965D490074D18F /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4CDB924965D490074D18F /* LabelViewController.swift */; };
-		8DE4CDBD24966DF20074D18F /* GCDDeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4CDBC24966DF20074D18F /* GCDDeadlineViewController.swift */; };
+		8DE4CDBD24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4CDBC24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D078D85249DA59C00B43D76 /* NonescapingVarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonescapingVarViewController.swift; sourceTree = "<group>"; };
+		8D078D87249DA5AF00B43D76 /* EscapingFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingFuncViewController.swift; sourceTree = "<group>"; };
 		8D3CD6A7248D24A80065A1A4 /* MemoryLeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryLeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3CD6AA248D24A80065A1A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3CD6AC248D24A80065A1A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,12 +53,13 @@
 		8D3CD6C3248D36490065A1A4 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		8D3CD6C5248D36B70065A1A4 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		8D3CD6D1248D39E50065A1A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		8D3CD6D3248D3BB90065A1A4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		8D3CD6D5248D3E230065A1A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8D7CEEDE248EFF4B008F8A67 /* MemoryLeakType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLeakType.swift; sourceTree = "<group>"; };
-		8D7CEEE3248F0866008F8A67 /* StrongReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferencesViewController.swift; sourceTree = "<group>"; };
-		8D7CEEE5248F0893008F8A67 /* StrongReferencesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferencesPresenter.swift; sourceTree = "<group>"; };
+		8D7CEEE3248F0866008F8A67 /* ReferenceCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceCycleViewController.swift; sourceTree = "<group>"; };
+		8D7CEEE5248F0893008F8A67 /* ReferenceCyclePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceCyclePresenter.swift; sourceTree = "<group>"; };
 		8D7CEEE9248F08E5008F8A67 /* AlertActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionViewController.swift; sourceTree = "<group>"; };
+		8D8B7F4C24A90FBF0023A6E5 /* StrongReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferencesViewController.swift; sourceTree = "<group>"; };
+		8D8B7F4E24A911910023A6E5 /* ReferenceCycleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceCycleCoordinator.swift; sourceTree = "<group>"; };
 		8DC181FE2495B526004F1C81 /* StrongReferencesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferencesCoordinator.swift; sourceTree = "<group>"; };
 		8DC182022495C0C0004F1C81 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
 		8DC182062495CB62004F1C81 /* ClosureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureType.swift; sourceTree = "<group>"; };
@@ -59,9 +67,11 @@
 		8DC1820A2495CD98004F1C81 /* ClosuresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresPresenter.swift; sourceTree = "<group>"; };
 		8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresViewController.swift; sourceTree = "<group>"; };
 		8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimateViewController.swift; sourceTree = "<group>"; };
-		8DC182182495D4E5004F1C81 /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
+		8DC182182495D4E5004F1C81 /* GrandCentralDispatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchViewController.swift; sourceTree = "<group>"; };
+		8DD9EB0B24982CEE002293F3 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		8DD9EB0E24982DFA002293F3 /* RequestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPresenter.swift; sourceTree = "<group>"; };
 		8DE4CDB924965D490074D18F /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
-		8DE4CDBC24966DF20074D18F /* GCDDeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDDeadlineViewController.swift; sourceTree = "<group>"; };
+		8DE4CDBC24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchDeadlineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				8D3CD6D1248D39E50065A1A4 /* AppCoordinator.swift */,
-				8D3CD6D3248D3BB90065A1A4 /* HomeCoordinator.swift */,
 				8DC181FE2495B526004F1C81 /* StrongReferencesCoordinator.swift */,
+				8D8B7F4E24A911910023A6E5 /* ReferenceCycleCoordinator.swift */,
 				8DC182082495CD3B004F1C81 /* ClosuresCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -159,19 +169,20 @@
 			isa = PBXGroup;
 			children = (
 				8D3CD6C0248D36090065A1A4 /* Home */,
-				8D7CEEE1248F080F008F8A67 /* StrongReferences */,
+				8D7CEEE1248F080F008F8A67 /* ReferenceCycle */,
 				8D7CEEE2248F081F008F8A67 /* Closures */,
+				8D8B7F4C24A90FBF0023A6E5 /* StrongReferencesViewController.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		8D7CEEE1248F080F008F8A67 /* StrongReferences */ = {
+		8D7CEEE1248F080F008F8A67 /* ReferenceCycle */ = {
 			isa = PBXGroup;
 			children = (
-				8D7CEEE5248F0893008F8A67 /* StrongReferencesPresenter.swift */,
-				8D7CEEE3248F0866008F8A67 /* StrongReferencesViewController.swift */,
+				8D7CEEE5248F0893008F8A67 /* ReferenceCyclePresenter.swift */,
+				8D7CEEE3248F0866008F8A67 /* ReferenceCycleViewController.swift */,
 			);
-			path = StrongReferences;
+			path = ReferenceCycle;
 			sourceTree = "<group>";
 		};
 		8D7CEEE2248F081F008F8A67 /* Closures */ = {
@@ -184,14 +195,26 @@
 			path = Closures;
 			sourceTree = "<group>";
 		};
+		8DD9EB0D24982DDE002293F3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				8DD9EB0E24982DFA002293F3 /* RequestPresenter.swift */,
+				8DD9EB0B24982CEE002293F3 /* RequestViewController.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		8DE4CDBB249660390074D18F /* Examples */ = {
 			isa = PBXGroup;
 			children = (
 				8DC182022495C0C0004F1C81 /* NotificationCenterViewController.swift */,
 				8D7CEEE9248F08E5008F8A67 /* AlertActionViewController.swift */,
 				8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */,
-				8DC182182495D4E5004F1C81 /* GCDViewController.swift */,
-				8DE4CDBC24966DF20074D18F /* GCDDeadlineViewController.swift */,
+				8DC182182495D4E5004F1C81 /* GrandCentralDispatchViewController.swift */,
+				8DE4CDBC24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift */,
+				8D078D85249DA59C00B43D76 /* NonescapingVarViewController.swift */,
+				8D078D87249DA5AF00B43D76 /* EscapingFuncViewController.swift */,
+				8DD9EB0D24982DDE002293F3 /* Request */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -268,24 +291,29 @@
 			files = (
 				8D3CD6C2248D36320065A1A4 /* Coordinator.swift in Sources */,
 				8D3CD6AF248D24A80065A1A4 /* ViewController.swift in Sources */,
-				8D3CD6D4248D3BB90065A1A4 /* HomeCoordinator.swift in Sources */,
+				8D078D86249DA59C00B43D76 /* NonescapingVarViewController.swift in Sources */,
 				8D3CD6AB248D24A80065A1A4 /* AppDelegate.swift in Sources */,
 				8D3CD6CB248D36B70065A1A4 /* HomePresenter.swift in Sources */,
+				8DD9EB0F24982DFA002293F3 /* RequestPresenter.swift in Sources */,
+				8D8B7F4F24A911910023A6E5 /* ReferenceCycleCoordinator.swift in Sources */,
 				8DC182032495C0C0004F1C81 /* NotificationCenterViewController.swift in Sources */,
 				8DC182092495CD3B004F1C81 /* ClosuresCoordinator.swift in Sources */,
+				8D8B7F4D24A90FBF0023A6E5 /* StrongReferencesViewController.swift in Sources */,
 				8D7CEEEA248F08E5008F8A67 /* AlertActionViewController.swift in Sources */,
-				8D7CEEE6248F0893008F8A67 /* StrongReferencesPresenter.swift in Sources */,
+				8D078D88249DA5AF00B43D76 /* EscapingFuncViewController.swift in Sources */,
+				8D7CEEE6248F0893008F8A67 /* ReferenceCyclePresenter.swift in Sources */,
 				8DC1820B2495CD98004F1C81 /* ClosuresPresenter.swift in Sources */,
 				8D3CD6D2248D39E50065A1A4 /* AppCoordinator.swift in Sources */,
 				8DE4CDBA24965D490074D18F /* LabelViewController.swift in Sources */,
 				8DC182132495D4A9004F1C81 /* ViewAnimateViewController.swift in Sources */,
 				8DC182072495CB62004F1C81 /* ClosureType.swift in Sources */,
-				8D7CEEE4248F0866008F8A67 /* StrongReferencesViewController.swift in Sources */,
+				8DD9EB0C24982CEE002293F3 /* RequestViewController.swift in Sources */,
+				8D7CEEE4248F0866008F8A67 /* ReferenceCycleViewController.swift in Sources */,
 				8D3CD6D6248D3E230065A1A4 /* HomeViewController.swift in Sources */,
 				8D3CD6AD248D24A80065A1A4 /* SceneDelegate.swift in Sources */,
 				8D3CD6C4248D36490065A1A4 /* Presenter.swift in Sources */,
-				8DE4CDBD24966DF20074D18F /* GCDDeadlineViewController.swift in Sources */,
-				8DC182192495D4E5004F1C81 /* GCDViewController.swift in Sources */,
+				8DE4CDBD24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift in Sources */,
+				8DC182192495D4E5004F1C81 /* GrandCentralDispatchViewController.swift in Sources */,
 				8D7CEEDF248EFF4B008F8A67 /* MemoryLeakType.swift in Sources */,
 				8DC181FF2495B526004F1C81 /* StrongReferencesCoordinator.swift in Sources */,
 				8DC1820F2495CE05004F1C81 /* ClosuresViewController.swift in Sources */,

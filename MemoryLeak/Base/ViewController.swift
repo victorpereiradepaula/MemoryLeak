@@ -30,8 +30,4 @@ class ViewController: UIViewController {
         print("deinit: \(Self.self)")
     }
     #endif
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }

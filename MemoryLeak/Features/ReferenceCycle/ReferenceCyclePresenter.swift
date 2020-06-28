@@ -1,5 +1,5 @@
 //
-//  StrongReferencesPresenter.swift
+//  ReferenceCyclePresenter.swift
 //  MemoryLeak
 //
 //  Created by Victor Pereira on 08/06/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-final class StrongReferencesPresenter: Presenter {
+final class ReferenceCyclePresenter: Presenter {
     
-    var viewController: StrongReferencesViewController?
+    var viewController: ReferenceCycleViewController?
 }
 
 // MARK: StrongReferencesPresenterProtocol
-extension StrongReferencesPresenter: StrongReferencesPresenterProtocol {
+extension ReferenceCyclePresenter: ReferenceCyclePresenterProtocol {
     
     func didTapAlertButton() {
         let alertController = UIAlertController(title: "Cuidado", message: "Talvez exista um memory leak aqui", preferredStyle: .alert)

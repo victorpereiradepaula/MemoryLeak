@@ -10,39 +10,43 @@ import UIKit
 
 final class ClosuresCoordinator: Coordinator {
     
-    init(navigationController: UINavigationController) {
-        super.init()
-        self.navigationController = navigationController
-    }
-    
-    func start() -> UIViewController {
+    func start() {
         let closuresPresenter = ClosuresPresenter()
         closuresPresenter.coordinator = self
+        let closuresViewController = ClosuresViewController(presenter: closuresPresenter)
         
-        return ClosuresViewController(presenter: closuresPresenter)
+        navigationController?.pushViewController(closuresViewController, animated: true)
     }
 }
 
 // MARK: ClosureCoordinatorProtocol
 extension ClosuresCoordinator: ClosureCoordinatorProtocol {
     
-    func openNotificationCenter() {
+    func showNotificationCenter() {
         navigationController?.pushViewController(NotificationCenterViewController(), animated: true)
     }
     
-    func openAlertAction() {
+    func showAlertAction() {
         navigationController?.pushViewController(AlertActionViewController(), animated: true)
     }
     
-    func openViewAnimate() {
+    func showViewAnimate() {
         navigationController?.pushViewController(ViewAnimateViewController(), animated: true)
     }
     
-    func openGCD() {
-        navigationController?.pushViewController(GCDViewController(), animated: true)
+    func showGCD() {
+        navigationController?.pushViewController(GrandCentralDispatchViewController(), animated: true)
     }
     
-    func openGCDDeadline() {
-        navigationController?.pushViewController(GCDDeadlineViewController(), animated: true)
+    func showGCDDeadline() {
+        navigationController?.pushViewController(GrandCentralDispatchDeadlineViewController(), animated: true)
+    }
+    
+    func showEscapingClosure() {
+        navigationController?.pushViewController(EscapingFuncViewController(), animated: true)
+    }
+    
+    func showNonescapingClosure() {
+        navigationController?.pushViewController(NonescapingVarViewController(), animated: true)
     }
 }

@@ -14,7 +14,6 @@ class LabelViewController: ViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .yellow
-        label.textAlignment = .justified
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
         return label

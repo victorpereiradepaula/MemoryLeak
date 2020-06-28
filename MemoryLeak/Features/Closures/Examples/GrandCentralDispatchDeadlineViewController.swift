@@ -1,5 +1,5 @@
 //
-//  GCDAfterViewController.swift
+//  GrandCentralDispatchDeadlineViewController.swift
 //  MemoryLeak
 //
 //  Created by Victor Pereira on 14/06/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class GCDDeadlineViewController: LabelViewController {
+final class GrandCentralDispatchDeadlineViewController: LabelViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +18,11 @@ final class GCDDeadlineViewController: LabelViewController {
         self.label.text = "Assim como o DispatchQueue.main.async, o DispatchQueue.main.asyncAfter irá desalocar a memória mesmo sem [weak self], mas apenas após a execução do bloco.\n\nSaia desta tela e espere o comportamento inesperado."
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 15, execute: {
-            self.openMessage()
+            self.showMessage()
         })
     }
     
-    private func openMessage() {
+    private func showMessage() {
         UIApplication.shared.open(URL(string: "https://docs.google.com/document/d/1upvEhObMsFFdUunteL9bPjnWMLMZLc2AU8CrRKviZbo/edit?usp=sharing")!)
     }
 }

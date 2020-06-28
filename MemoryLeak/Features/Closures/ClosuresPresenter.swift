@@ -7,11 +7,13 @@
 //
 
 protocol ClosureCoordinatorProtocol: AnyObject {
-    func openNotificationCenter()
-    func openAlertAction()
-    func openViewAnimate()
-    func openGCD()
-    func openGCDDeadline()
+    func showNotificationCenter()
+    func showAlertAction()
+    func showViewAnimate()
+    func showGCD()
+    func showGCDDeadline()
+    func showEscapingClosure()
+    func showNonescapingClosure()
 }
 
 final class ClosuresPresenter: Presenter {
@@ -29,15 +31,19 @@ extension ClosuresPresenter: ClosuresPresenterProtocol {
     func didSelectCellAt(row: Int) {
         switch closureTypes[row] {
         case .alertAction:
-            coordinator?.openAlertAction()
+            coordinator?.showAlertAction()
         case .notificationCenter:
-            coordinator?.openNotificationCenter()
+            coordinator?.showNotificationCenter()
         case .viewAnimate:
-            coordinator?.openViewAnimate()
+            coordinator?.showViewAnimate()
         case .gcd:
-            coordinator?.openGCD()
+            coordinator?.showGCD()
         case .gcdWithDeadline:
-            coordinator?.openGCDDeadline()
+            coordinator?.showGCDDeadline()
+        case .escapingClosure:
+            coordinator?.showEscapingClosure()
+        case .nonescapingClosure:
+            coordinator?.showNonescapingClosure()
         }
     }
 }

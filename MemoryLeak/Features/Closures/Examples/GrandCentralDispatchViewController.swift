@@ -1,5 +1,5 @@
 //
-//  GCDViewController.swift
+//  GrandCentralDispatchViewController.swift
 //  MemoryLeak
 //
 //  Created by Victor Pereira on 13/06/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class GCDViewController: LabelViewController {
+final class GrandCentralDispatchViewController: LabelViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ final class GCDViewController: LabelViewController {
         DispatchQueue.main.async {
             self.view.backgroundColor = .green
             self.label.textColor = .black
-            self.label.text = "Parece que os DispatchQueue.main.async são seguros sem [weak self] 😮"
+            self.label.text = "DispatchQueue.main.async é seguro sem [weak self]"
         }
     }
 }

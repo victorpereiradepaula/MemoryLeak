@@ -1,5 +1,5 @@
 //
-//  StrongReferencesViewController.swift
+//  ReferenceCycleViewController.swift
 //  MemoryLeak
 //
 //  Created by Victor Pereira on 08/06/20.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol StrongReferencesPresenterProtocol: PresenterProtocol {
+protocol ReferenceCyclePresenterProtocol: PresenterProtocol {
     func didTapAlertButton()
 }
 
-final class StrongReferencesViewController: ViewController {
+final class ReferenceCycleViewController: ViewController {
     
-    var presenter: StrongReferencesPresenterProtocol? {
-        basePresenter as? StrongReferencesPresenterProtocol
+    var presenter: ReferenceCyclePresenterProtocol? {
+        basePresenter as? ReferenceCyclePresenterProtocol
     }
     
     private lazy var alertButton: UIButton = {
@@ -30,10 +30,12 @@ final class StrongReferencesViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        title = "Strong References"
     }
     
     private func setupView() {
-        view.backgroundColor = .purple
+        view.backgroundColor = .red
         
         view.addSubview(alertButton)
         NSLayoutConstraint.activate([

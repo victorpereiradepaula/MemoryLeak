@@ -13,6 +13,10 @@ class Coordinator {
     internal var navigationController: UINavigationController?
     internal var childCoordinator: Coordinator?
     
+    init(navigationController: UINavigationController? = nil) {
+        self.navigationController = navigationController
+    }
+    
     #if DEBUG
     deinit {
         print("deinit: \(Self.self)")

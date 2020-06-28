@@ -17,7 +17,7 @@ final class ViewAnimateViewController: LabelViewController {
             self.view.backgroundColor = .green
             self.label.textColor = .black
         }) { _ in
-            self.label.text = "Parece que os UIView.animate são seguras sem [weak self] 😮"
+            self.label.text = "UIView.animate é seguro sem [weak self]"
         }
     }
 }

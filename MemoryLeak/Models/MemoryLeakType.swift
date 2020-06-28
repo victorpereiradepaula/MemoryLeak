@@ -7,10 +7,12 @@
 //
 
 enum MemoryLeakType: CaseIterable {
-    case strongReferences, closures
+    case referenceCycles, strongReferences, closures
     
     var title: String {
         switch self {
+        case .referenceCycles:
+            return "Reference Cycles"
         case .strongReferences:
             return "Strong references"
         case .closures:
