@@ -45,8 +45,6 @@ extension ClosuresPresenter: ClosuresPresenterProtocol {
             coordinator?.showEscapingClosure()
         case .nonescapingClosure:
             coordinator?.showNonescapingClosure()
-        case .request:
-            coordinator?.showRequest()
         }
     }
 }

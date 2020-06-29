@@ -34,7 +34,6 @@
 		8DC1820F2495CE05004F1C81 /* ClosuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */; };
 		8DC182132495D4A9004F1C81 /* ViewAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */; };
 		8DC182192495D4E5004F1C81 /* GrandCentralDispatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182182495D4E5004F1C81 /* GrandCentralDispatchViewController.swift */; };
-		8DD9EB0C24982CEE002293F3 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9EB0B24982CEE002293F3 /* RequestViewController.swift */; };
 		8DE4CDBA24965D490074D18F /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4CDB924965D490074D18F /* LabelViewController.swift */; };
 		8DE4CDBD24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4CDBC24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift */; };
 /* End PBXBuildFile section */
@@ -69,7 +68,6 @@
 		8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresViewController.swift; sourceTree = "<group>"; };
 		8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimateViewController.swift; sourceTree = "<group>"; };
 		8DC182182495D4E5004F1C81 /* GrandCentralDispatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchViewController.swift; sourceTree = "<group>"; };
-		8DD9EB0B24982CEE002293F3 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		8DE4CDB924965D490074D18F /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		8DE4CDBC24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchDeadlineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,7 +212,6 @@
 				8DE4CDBC24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift */,
 				8D078D85249DA59C00B43D76 /* NonescapingVarViewController.swift */,
 				8D078D87249DA5AF00B43D76 /* EscapingFuncViewController.swift */,
-				8DD9EB0B24982CEE002293F3 /* RequestViewController.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -306,7 +303,6 @@
 				8DE4CDBA24965D490074D18F /* LabelViewController.swift in Sources */,
 				8DC182132495D4A9004F1C81 /* ViewAnimateViewController.swift in Sources */,
 				8DC182072495CB62004F1C81 /* ClosureType.swift in Sources */,
-				8DD9EB0C24982CEE002293F3 /* RequestViewController.swift in Sources */,
 				8D7CEEE4248F0866008F8A67 /* ReferenceCycleViewController.swift in Sources */,
 				8D3CD6D6248D3E230065A1A4 /* HomeViewController.swift in Sources */,
 				8D3CD6AD248D24A80065A1A4 /* SceneDelegate.swift in Sources */,
