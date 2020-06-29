@@ -34,6 +34,7 @@
 		8DC1820F2495CE05004F1C81 /* ClosuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */; };
 		8DC182132495D4A9004F1C81 /* ViewAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */; };
 		8DC182192495D4E5004F1C81 /* GrandCentralDispatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC182182495D4E5004F1C81 /* GrandCentralDispatchViewController.swift */; };
+		8DE3B6E424AAA2AE00DD668A /* StrongReferencesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3B6E324AAA2AE00DD668A /* StrongReferencesPresenter.swift */; };
 		8DE4CDBA24965D490074D18F /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4CDB924965D490074D18F /* LabelViewController.swift */; };
 		8DE4CDBD24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4CDBC24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		8DC1820E2495CE05004F1C81 /* ClosuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresViewController.swift; sourceTree = "<group>"; };
 		8DC182122495D4A9004F1C81 /* ViewAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimateViewController.swift; sourceTree = "<group>"; };
 		8DC182182495D4E5004F1C81 /* GrandCentralDispatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchViewController.swift; sourceTree = "<group>"; };
+		8DE3B6E324AAA2AE00DD668A /* StrongReferencesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferencesPresenter.swift; sourceTree = "<group>"; };
 		8DE4CDB924965D490074D18F /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		8DE4CDBC24966DF20074D18F /* GrandCentralDispatchDeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchDeadlineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,8 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				8D3CD6D1248D39E50065A1A4 /* AppCoordinator.swift */,
-				8DC181FE2495B526004F1C81 /* StrongReferencesCoordinator.swift */,
 				8D8B7F4E24A911910023A6E5 /* ReferenceCycleCoordinator.swift */,
+				8DC181FE2495B526004F1C81 /* StrongReferencesCoordinator.swift */,
 				8DC182082495CD3B004F1C81 /* ClosuresCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -169,7 +171,7 @@
 			children = (
 				8D3CD6C0248D36090065A1A4 /* Home */,
 				8D7CEEE1248F080F008F8A67 /* ReferenceCycle */,
-				8D8B7F4C24A90FBF0023A6E5 /* StrongReferencesViewController.swift */,
+				8DE3B6E224AAA28300DD668A /* StrongReferences */,
 				8D7CEEE2248F081F008F8A67 /* Closures */,
 			);
 			path = Features;
@@ -200,6 +202,15 @@
 				8D8B7F5124A9302C0023A6E5 /* PrintSomethingProtocol.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		8DE3B6E224AAA28300DD668A /* StrongReferences */ = {
+			isa = PBXGroup;
+			children = (
+				8DE3B6E324AAA2AE00DD668A /* StrongReferencesPresenter.swift */,
+				8D8B7F4C24A90FBF0023A6E5 /* StrongReferencesViewController.swift */,
+			);
+			path = StrongReferences;
 			sourceTree = "<group>";
 		};
 		8DE4CDBB249660390074D18F /* Examples */ = {
@@ -295,6 +306,7 @@
 				8DC182032495C0C0004F1C81 /* NotificationCenterViewController.swift in Sources */,
 				8DC182092495CD3B004F1C81 /* ClosuresCoordinator.swift in Sources */,
 				8D8B7F4D24A90FBF0023A6E5 /* StrongReferencesViewController.swift in Sources */,
+				8DE3B6E424AAA2AE00DD668A /* StrongReferencesPresenter.swift in Sources */,
 				8D7CEEEA248F08E5008F8A67 /* AlertActionViewController.swift in Sources */,
 				8D078D88249DA5AF00B43D76 /* EscapingFuncViewController.swift in Sources */,
 				8D7CEEE6248F0893008F8A67 /* ReferenceCyclePresenter.swift in Sources */,

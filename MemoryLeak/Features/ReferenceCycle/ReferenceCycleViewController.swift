@@ -8,7 +8,8 @@
 
 import UIKit
 
-protocol ReferenceCyclePresenterProtocol: PresenterProtocol {
+protocol ReferenceCyclePresenterProtocol: NavigationBackPresenterProtocol {
+    
     func didTapAlertButton()
 }
 

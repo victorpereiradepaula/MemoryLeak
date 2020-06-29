@@ -11,8 +11,7 @@ import UIKit
 final class ClosuresCoordinator: Coordinator {
     
     func start() {
-        let closuresPresenter = ClosuresPresenter()
-        closuresPresenter.coordinator = self
+        let closuresPresenter = ClosuresPresenter(coordinator: self)
         let closuresViewController = ClosuresViewController(presenter: closuresPresenter)
         
         navigationController?.pushViewController(closuresViewController, animated: true)
@@ -48,9 +47,5 @@ extension ClosuresCoordinator: ClosureCoordinatorProtocol {
     
     func showNonescapingClosure() {
         navigationController?.pushViewController(NonescapingVarViewController(), animated: true)
-    }
-    
-    func showRequest() {
-        
     }
 }

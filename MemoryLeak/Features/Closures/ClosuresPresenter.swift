@@ -6,7 +6,8 @@
 //  Copyright © 2020 Victor Pereira. All rights reserved.
 //
 
-protocol ClosureCoordinatorProtocol: AnyObject {
+protocol ClosureCoordinatorProtocol: CoordinatorNavigationBackProtocol {
+    
     func showNotificationCenter()
     func showAlertAction()
     func showViewAnimate()
@@ -14,12 +15,17 @@ protocol ClosureCoordinatorProtocol: AnyObject {
     func showGCDDeadline()
     func showEscapingClosure()
     func showNonescapingClosure()
-    func showRequest()
 }
 
 final class ClosuresPresenter: Presenter {
     
     weak var coordinator: ClosureCoordinatorProtocol?
+    
+    required init(coordinator: ClosureCoordinatorProtocol?) {
+        super.init(coordinator: coordinator)
+        
+        self.coordinator = coordinator
+    }
 }
 
 // MARK: ClosuresPresenterProtocol

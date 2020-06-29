@@ -8,7 +8,8 @@
 
 import UIKit
 
-protocol ClosuresPresenterProtocol: PresenterProtocol {
+protocol ClosuresPresenterProtocol: NavigationBackPresenterProtocol {
+    
     var closureTypes: [ClosureType] { get }
     
     func didSelectCellAt(row: Int)

@@ -8,10 +8,11 @@
 
 import UIKit
 
-final class StrongReferencesCoordinator: Coordinator {
+final class StrongReferencesCoordinator: Coordinator, StrongReferencesCoordinatorProtocol {
     
     func start() {
-        let strongReferencesViewController = StrongReferencesViewController()
+        let strongReferencesPresenter = StrongReferencesPresenter(coordinator: self)
+        let strongReferencesViewController = StrongReferencesViewController(presenter: strongReferencesPresenter)
         
         navigationController?.pushViewController(strongReferencesViewController, animated: true)
     }

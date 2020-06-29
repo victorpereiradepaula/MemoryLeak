@@ -14,7 +14,7 @@ final class AppCoordinator: Coordinator {
     
     init(window: UIWindow) {
         self.window = window
-        super.init()
+        super.init(callback: nil)
         
         window.rootViewController = createHomeViewController()
         window.makeKeyAndVisible()
@@ -36,21 +36,21 @@ final class AppCoordinator: Coordinator {
 extension AppCoordinator: HomeCoordinatorProtocol {
     
     func showReferenceCycles() {
-        let referenceCycleCoordinator = ReferenceCycleCoordinator(navigationController: navigationController)
+        let referenceCycleCoordinator = ReferenceCycleCoordinator(navigationController: navigationController, callback: self)
         referenceCycleCoordinator.start()
         
         childCoordinator = referenceCycleCoordinator
     }
     
     func showStrongReferences() {
-        let strongReferencesCoordinator = StrongReferencesCoordinator(navigationController: navigationController)
+        let strongReferencesCoordinator = StrongReferencesCoordinator(navigationController: navigationController, callback: self)
         strongReferencesCoordinator.start()
         
         childCoordinator = strongReferencesCoordinator
     }
     
     func showClosures() {
-        let closuresCoordinator = ClosuresCoordinator(navigationController: navigationController ?? UINavigationController())
+        let closuresCoordinator = ClosuresCoordinator(navigationController: navigationController ?? UINavigationController(), callback: self)
         closuresCoordinator.start()
         
         childCoordinator = closuresCoordinator

@@ -8,10 +8,10 @@
 
 import UIKit
 
-final class ReferenceCycleCoordinator: Coordinator {
+final class ReferenceCycleCoordinator: Coordinator, CoordinatorNavigationBackProtocol {
     
     func start() {
-        let strongReferencesPresenter = ReferenceCyclePresenter()
+        let strongReferencesPresenter = ReferenceCyclePresenter(coordinator: self)
         let strongReferencesViewController = ReferenceCycleViewController(presenter: strongReferencesPresenter)
         
         strongReferencesPresenter.viewController = strongReferencesViewController

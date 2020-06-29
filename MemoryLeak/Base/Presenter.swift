@@ -8,7 +8,18 @@
 
 protocol PresenterProtocol: AnyObject { }
 
+protocol NavigationBackPresenterProtocol: PresenterProtocol {
+    
+    func didNavigationBack()
+}
+
 class Presenter {
+    
+    var baseCoordinator: CoordinatorNavigationBackProtocol?
+    
+    init(coordinator: CoordinatorNavigationBackProtocol? = nil) {
+        baseCoordinator = coordinator
+    }
     
     #if DEBUG
     deinit {
@@ -16,3 +27,12 @@ class Presenter {
     }
     #endif
 }
+
+// MARK: NavigationBackPresenterProtocol
+extension Presenter: NavigationBackPresenterProtocol {
+    
+    func didNavigationBack() {
+        baseCoordinator?.didNavigationBack()
+    }
+}
+

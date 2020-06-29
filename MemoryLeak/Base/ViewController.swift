@@ -36,4 +36,12 @@ class ViewController: UIViewController {
         print("deinit: \(Self.self)")
     }
     #endif
+    
+    override func didMove(toParent parent: UIViewController?) {
+        super.didMove(toParent: parent)
+        
+        if let presenter = basePresenter as? NavigationBackPresenterProtocol, parent == nil {
+            presenter.didNavigationBack()
+        }
+    }
 }

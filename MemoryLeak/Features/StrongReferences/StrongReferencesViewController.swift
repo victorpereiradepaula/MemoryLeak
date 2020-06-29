@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol StrongReferencesPresenterProtocol: NavigationBackPresenterProtocol { }
+
 final class StrongReferencesViewController: LabelViewController {
+    
+    private var presenter: StrongReferencesPresenterProtocol? {
+        basePresenter as? StrongReferencesPresenterProtocol
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
