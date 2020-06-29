@@ -15,8 +15,8 @@ final class GrandCentralDispatchDeadlineViewController: LabelViewController {
         
         self.label.text = "Assim como o DispatchQueue.main.async, o DispatchQueue.main.asyncAfter irá desalocar a memória mesmo sem [weak self], mas apenas após a execução do bloco.\n\nSaia desta tela e espere o comportamento inesperado."
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 15, execute: {
-            self.showMessage()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15, execute: { [weak self] in
+            self?.showMessage()
         })
     }
     
