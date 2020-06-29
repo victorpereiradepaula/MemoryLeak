@@ -13,8 +13,8 @@ final class NonescapingVarViewController: LabelViewController, PrintSomethingPro
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nonescapingVar = {
-            self.printSomething()
+        nonescapingVar = { [weak self] in
+            self?.printSomething()
         }
     }
 }

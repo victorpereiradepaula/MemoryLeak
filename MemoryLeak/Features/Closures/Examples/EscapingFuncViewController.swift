@@ -22,8 +22,8 @@ final class EscapingFuncViewController: LabelViewController, PrintSomethingProto
         
         label.text = ""
         
-        escapingFunc() { (error) in
-            self.printSomething()
+        escapingFunc() { [weak self] error in
+            self?.printSomething()
             print("Error: \(error?.localizedDescription ?? "-")")
         }
     }
