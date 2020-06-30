@@ -13,6 +13,8 @@ final class NonescapingVarViewController: LabelViewController, PrintSomethingPro
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        label.text = "@nonescaping closures só introduzir memory leak quando:\n\n- A closure é salva em uma propriedade ou passado para outra closure;\n- Dentro da closure é mantida uma referência forte"
+        
         nonescapingVar = {
             self.printSomething()
         }
