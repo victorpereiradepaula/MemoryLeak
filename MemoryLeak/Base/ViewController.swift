@@ -40,8 +40,8 @@ class ViewController: UIViewController {
     override func didMove(toParent parent: UIViewController?) {
         super.didMove(toParent: parent)
         
-        if let presenter = basePresenter as? NavigationBackPresenterProtocol, parent == nil {
-            presenter.didNavigationBack()
-        }
+//        if let presenter = basePresenter as? NavigationBackPresenterProtocol, parent == nil {
+//            presenter.didNavigationBack()
+//        }
     }
 }

@@ -22,8 +22,8 @@ final class EscapingFuncViewController: LabelViewController, PrintSomethingProto
         
         label.text = "@escaping closures podem introduzir memory leaks quando:\n\n- A closure é salva em uma propriedade ou passado para outra closure;\n- Dentro da closure é mantida uma referência forte"
         
-        escapingFunc() { [weak self] error in
-            self?.printSomething()
+        escapingFunc() { error in
+            self.printSomething()
             print("Error: \(error?.localizedDescription ?? "-")")
         }
     }

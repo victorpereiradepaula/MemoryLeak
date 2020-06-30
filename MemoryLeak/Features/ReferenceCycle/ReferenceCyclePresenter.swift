@@ -10,7 +10,7 @@ import UIKit
 
 final class ReferenceCyclePresenter: Presenter {
     
-    weak var viewController: ReferenceCycleViewController?
+    var viewController: ReferenceCycleViewController?
 }
 
 // MARK: StrongReferencesPresenterProtocol
