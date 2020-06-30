@@ -15,7 +15,13 @@ protocol HomeCoordinatorProtocol: AnyObject {
 
 final class HomePresenter: Presenter {
     
-    weak var coordinator: HomeCoordinatorProtocol?
+    private weak var coordinator: HomeCoordinatorProtocol?
+    
+    required init(coordinator: HomeCoordinatorProtocol) {
+        super.init()
+        
+        self.coordinator = coordinator
+    }
 }
 
 // MARK: HomePresenterProtocol

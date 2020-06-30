@@ -6,9 +6,16 @@
 //  Copyright © 2020 Victor Pereira. All rights reserved.
 //
 
+import UIKit
+
 final class NonescapingVarViewController: LabelViewController, PrintSomethingProtocol {
     
-    var nonescapingVar: (() -> Void)?
+    private var nonescapingVar: (() -> Void)?
+    private func nonEscaping(handler: (() -> Void)?) {
+        if let handler = handler {
+            handler()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +23,9 @@ final class NonescapingVarViewController: LabelViewController, PrintSomethingPro
         label.text = "@nonescaping closures só introduzir memory leak quando:\n\n- A closure é salva em uma propriedade ou passado para outra closure;\n- Dentro da closure é mantida uma referência forte"
         
         nonescapingVar = { [weak self] in
-            self.printSomething()
+            self?.printSomething()
         }
+        
+        nonEscaping(handler: nonescapingVar)
     }
 }

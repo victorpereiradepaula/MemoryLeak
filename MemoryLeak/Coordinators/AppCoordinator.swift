@@ -21,8 +21,7 @@ final class AppCoordinator: Coordinator {
     }
     
     private func createHomeViewController() -> UIViewController {
-        let presenter = HomePresenter()
-        presenter.coordinator = self
+        let presenter = HomePresenter(coordinator: self)
         
         let navigationController = UINavigationController(rootViewController: HomeViewController(presenter: presenter))
         

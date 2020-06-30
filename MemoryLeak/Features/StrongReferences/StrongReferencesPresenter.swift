@@ -10,7 +10,7 @@ protocol StrongReferencesCoordinatorProtocol: CoordinatorNavigationBackProtocol 
 
 final class StrongReferencesPresenter: Presenter, StrongReferencesPresenterProtocol {
     
-    weak var coordinator: StrongReferencesCoordinatorProtocol?
+    private weak var coordinator: StrongReferencesCoordinatorProtocol?
     
     required init(coordinator: StrongReferencesCoordinatorProtocol) {
         super.init(coordinator: coordinator)

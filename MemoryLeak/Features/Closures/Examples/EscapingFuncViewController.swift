@@ -10,7 +10,7 @@ import UIKit
 
 final class EscapingFuncViewController: LabelViewController, PrintSomethingProtocol {
     
-    func escapingFunc(completionHandler: @escaping (Error?) -> Void) {
+    private func escapingFunc(completionHandler: @escaping (Error?) -> Void) {
         guard let url = URL(string: "https://www.google.com.br") else { return }
         URLSession.shared.dataTask(with: url) { _,_, error in
             completionHandler(error)
@@ -20,7 +20,7 @@ final class EscapingFuncViewController: LabelViewController, PrintSomethingProto
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = "@escaping closures podem introduzir memory leaks quando:\n\n- A closure é salva em uma propriedade;\n- Dentro da closure é mantida uma referência forte"
+        label.text = "@escaping closures podem introduzir memory leaks quando:\n\n- A closure é salva em uma propriedade ou passado para outra closure;\n- Dentro da closure é mantida uma referência forte"
         
         escapingFunc() { [weak self] error in
             self?.printSomething()

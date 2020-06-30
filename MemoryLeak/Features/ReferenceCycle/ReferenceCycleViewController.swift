@@ -15,7 +15,7 @@ protocol ReferenceCyclePresenterProtocol: NavigationBackPresenterProtocol {
 
 final class ReferenceCycleViewController: LabelViewController {
     
-    var presenter: ReferenceCyclePresenterProtocol? {
+    private var presenter: ReferenceCyclePresenterProtocol? {
         basePresenter as? ReferenceCyclePresenterProtocol
     }
     

@@ -19,7 +19,7 @@ protocol ClosureCoordinatorProtocol: CoordinatorNavigationBackProtocol {
 
 final class ClosuresPresenter: Presenter {
     
-    weak var coordinator: ClosureCoordinatorProtocol?
+    private weak var coordinator: ClosureCoordinatorProtocol?
     
     required init(coordinator: ClosureCoordinatorProtocol?) {
         super.init(coordinator: coordinator)

@@ -22,7 +22,7 @@ final class HomeViewController: ViewController {
         return tableView
     }()
     
-    weak var presenter: HomePresenterProtocol? {
+    private weak var presenter: HomePresenterProtocol? {
         basePresenter as? HomePresenterProtocol
     }
     
