@@ -15,7 +15,7 @@ protocol NavigationBackPresenterProtocol: PresenterProtocol {
 
 class Presenter {
     
-    private var baseCoordinator: CoordinatorNavigationBackProtocol?
+    private weak var baseCoordinator: CoordinatorNavigationBackProtocol?
     
     init(coordinator: CoordinatorNavigationBackProtocol? = nil) {
         baseCoordinator = coordinator
