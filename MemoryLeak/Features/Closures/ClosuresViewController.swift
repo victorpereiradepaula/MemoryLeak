@@ -8,8 +8,8 @@
 
 import UIKit
 
-protocol ClosuresPresenterProtocol: NavigationBackPresenterProtocol {
-    
+protocol ClosuresPresenterProtocol {
+    var title: String { get }
     var closureTypes: [ClosureType] { get }
     
     func didSelectCellAt(row: Int)
@@ -23,15 +23,23 @@ final class ClosuresViewController: ViewController {
         return tableView
     }()
     
-    weak var presenter: ClosuresPresenterProtocol? {
-        basePresenter as? ClosuresPresenterProtocol
+    private let viewModel: ClosuresPresenterProtocol
+    
+    init(viewModel: ClosuresPresenterProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         
-        title = "Closures"
+        title = viewModel.title
     }
     
     private func setupTableView() {
@@ -49,22 +57,26 @@ extension ClosuresViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.closureTypes.count ?? 0
+        return viewModel.closureTypes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let leakType = presenter?.closureTypes[indexPath.row] else { return UITableViewCell() }
         let cell = UITableViewCell(style: .default,
                                    reuseIdentifier: "reuseIdentifier")
-        cell.textLabel?.text = leakType.title
+        cell.textLabel?.text = viewModel.closureTypes[indexPath.row].title
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.didSelectCellAt(row: indexPath.row)
+        viewModel.didSelectCellAt(row: indexPath.row)
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         UIView()
     }
+}
+
+// MARK: ClosuresViewDelegate
+extension ClosuresViewController: ClosuresViewDelegate {
+    
 }

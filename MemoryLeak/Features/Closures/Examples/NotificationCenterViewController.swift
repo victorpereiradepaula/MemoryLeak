@@ -13,7 +13,7 @@ final class NotificationCenterViewController: LabelViewController, PrintSomethin
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = "Precisamos de [weak self] nas closures do NotificationCenter.default.addObserver"
+        label.text = "Precisamos de [weak self] nas closures do método addObserver, do NotificationCenter."
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "DoSomething"),
                                                object: nil, queue: .main) { _ in

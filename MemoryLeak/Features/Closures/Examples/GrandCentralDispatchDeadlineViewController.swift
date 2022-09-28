@@ -13,13 +13,16 @@ final class GrandCentralDispatchDeadlineViewController: LabelViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.label.text = "Assim como o DispatchQueue.main.async, o DispatchQueue.main.asyncAfter irá desalocar a memória mesmo sem [weak self], mas apenas após a execução do bloco.\n\nSaia desta tela e espere o comportamento inesperado."
+        self.label.text = """
+        Assim como o DispatchQueue.main.async, o DispatchQueue.main.asyncAfter irá desalocar a memória mesmo sem [weak self], mas apenas após a execução do bloco.\n
+        Saia desta tela e espere o comportamento inesperado.
+        """
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 15, execute: {            self.showMessage()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15, execute: {            self.showArcDocumentation()
         })
     }
     
-    private func showMessage() {
-        UIApplication.shared.open(URL(string: "https://docs.google.com/document/d/1upvEhObMsFFdUunteL9bPjnWMLMZLc2AU8CrRKviZbo/edit?usp=sharing")!)
+    private func showArcDocumentation() {
+        UIApplication.shared.open(URL(string: "https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html")!)
     }
 }

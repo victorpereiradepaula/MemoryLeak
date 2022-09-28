@@ -7,7 +7,8 @@
 //
 
 enum ClosureType: CaseIterable {
-    case alertAction, notificationCenter, viewAnimate, gcd, gcdWithDeadline, escapingClosure, nonescapingClosure
+    case alertAction, notificationCenter, viewAnimate,
+         gcd, gcdWithDeadline, escapingClosure, nonescapingClosure
     
     var title: String {
         switch self {

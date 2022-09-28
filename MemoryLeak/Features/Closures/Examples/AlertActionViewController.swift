@@ -8,17 +8,26 @@
 
 import UIKit
 
-final class AlertActionViewController: ViewController {
+final class AlertActionViewController: LabelViewController, PrintSomethingProtocol {
+    
+    var alertController: UIAlertController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let alertController = UIAlertController(title: nil, message: "UIAlertAction é seguro sem [weak self]", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Cuidado",
+                                                message: """
+Caso o UIAlertController seja salvo em uma variável da classe ele não será seguro sem [weak self].
+Para usar de forma segura sem o [weak self], não salve UIAlertController em uma variável da classe.
+""",
+                                                preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Ok", style: .default, handler: { _ in
-            self.navigationController?.popViewController(animated: true)
+            self.printSomething()
         })
         alertController.addAction(alertAction)
         
         present(alertController, animated: true)
+        
+        self.alertController = alertController
     }
 }

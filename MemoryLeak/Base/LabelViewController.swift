@@ -10,7 +10,11 @@ import UIKit
 
 class LabelViewController: ViewController {
     
-    internal lazy var label: UILabel = {
+    var centerYConstant: CGFloat {
+        .zero
+    }
+    
+    lazy var label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -24,10 +28,11 @@ class LabelViewController: ViewController {
     }
     
     private func setupView() {
+        view.backgroundColor = .white
         view.addSubview(label)
         
         NSLayoutConstraint.activate([
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: centerYConstant),
             label.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
             label.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16)
         ])

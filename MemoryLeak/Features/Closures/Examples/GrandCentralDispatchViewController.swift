@@ -13,7 +13,7 @@ final class GrandCentralDispatchViewController: LabelViewController, PrintSometh
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.label.text = "DispatchQueue.main.async é seguro sem [weak self]"
+        self.label.text = "DispatchQueue.main.async é seguro sem [weak self]."
         
         DispatchQueue.main.async {
             self.printSomething()

@@ -13,10 +13,11 @@ final class ViewAnimateViewController: LabelViewController, PrintSomethingProtoc
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = "UIView.animate é seguro sem [weak self]"
+        label.text = "UIView.animate é seguro sem [weak self]."
         
         UIView.animate(withDuration: 0.5,delay: 0.5, animations: {
             self.view.backgroundColor = .green
+            self.printSomething()
         }) { _ in
             self.printSomething()
         }

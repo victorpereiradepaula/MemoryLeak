@@ -11,10 +11,12 @@ import UIKit
 final class ClosuresCoordinator: Coordinator {
     
     func start() {
-        let closuresPresenter = ClosuresPresenter(coordinator: self)
-        let closuresViewController = ClosuresViewController(presenter: closuresPresenter)
+        let viewModel = ClosuresViewModel(coordinator: self)
+        let viewController = ClosuresViewController(viewModel: viewModel)
         
-        navigationController?.pushViewController(closuresViewController, animated: true)
+        viewModel.viewDelegate = viewController
+        
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
