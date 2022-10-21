@@ -10,8 +10,8 @@ import UIKit
 
 final class EscapingFuncViewController: LabelViewController, PrintSomethingProtocol {
     
-    private lazy var escapingVar: ((Error?) -> Void) = { error in
-        self.printSomething()
+    private lazy var escapingVar: ((Error?) -> Void) = { [weak self] error in
+        self?.printSomething()
         print("Error: \(error?.localizedDescription ?? "-")")
         
     }

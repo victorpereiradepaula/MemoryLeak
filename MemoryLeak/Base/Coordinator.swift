@@ -12,6 +12,7 @@ class Coordinator {
     
     var navigationController: UINavigationController?
     var childCoordinator: Coordinator?
+    weak var coordinatorDelegate: Coordinator?
     
     init(navigationController: UINavigationController? = nil) {
         self.navigationController = navigationController
@@ -22,4 +23,5 @@ class Coordinator {
         print("deinit: \(Self.self)")
     }
     #endif
+
 }

@@ -15,7 +15,7 @@ protocol DelegatesViewDelegate: AnyObject {
 final class DelegatesViewModel: ViewModel {
     
     private weak var coordinator: DelegatesCoordinatorProtocol?
-    var viewDelegate: DelegatesViewDelegate?
+    weak var viewDelegate: DelegatesViewDelegate?
     
     required init(coordinator: DelegatesCoordinatorProtocol) {
         super.init()

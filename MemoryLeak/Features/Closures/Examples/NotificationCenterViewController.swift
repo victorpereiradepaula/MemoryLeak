@@ -16,8 +16,8 @@ final class NotificationCenterViewController: LabelViewController, PrintSomethin
         label.text = "Precisamos de [weak self] nas closures do método addObserver, do NotificationCenter."
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "DoSomething"),
-                                               object: nil, queue: .main) { _ in
-            self.printSomething()
+                                               object: nil, queue: .main) { [weak self] _ in
+            self?.printSomething()
         }
     }
 }

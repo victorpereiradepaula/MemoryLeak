@@ -10,8 +10,6 @@ import UIKit
 
 final class AlertActionViewController: LabelViewController, PrintSomethingProtocol {
     
-    var alertController: UIAlertController?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +25,5 @@ Para usar de forma segura sem o [weak self], não salve UIAlertController em uma
         alertController.addAction(alertAction)
         
         present(alertController, animated: true)
-        
-        self.alertController = alertController
     }
 }

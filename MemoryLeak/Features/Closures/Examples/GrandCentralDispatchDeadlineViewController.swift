@@ -18,7 +18,7 @@ final class GrandCentralDispatchDeadlineViewController: LabelViewController {
         Saia desta tela e espere o comportamento inesperado.
         """
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 15, execute: {            self.showArcDocumentation()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15, execute: { [weak self] in        self?.showArcDocumentation()
         })
     }
     

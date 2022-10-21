@@ -33,10 +33,10 @@ final class HomeCoordinator: Coordinator {
 extension HomeCoordinator: HomeCoordinatorProtocol {
     
     func showDelegates() {
-        let strongReferencesCoordinator = DelegatesCoordinator(navigationController: navigationController)
-        strongReferencesCoordinator.start()
+        let delegatesCoordinator = DelegatesCoordinator(navigationController: navigationController)
+        delegatesCoordinator.start()
         
-        childCoordinator = strongReferencesCoordinator
+        childCoordinator = delegatesCoordinator
     }
     
     func showClosures() {

@@ -26,8 +26,8 @@ final class NonescapingVarViewController: LabelViewController, PrintSomethingPro
         - Dentro da closure é mantida uma referência forte.
         """
         
-        nonescapingVar = {
-            self.printSomething()
+        nonescapingVar = { [weak self] in
+            self?.printSomething()
         }
         
         nonEscaping(handler: nonescapingVar)
